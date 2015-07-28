@@ -1,0 +1,183 @@
+<div class="band footer" id="contact">
+  
+    <footer class="main container">
+      
+      <div class="four columns">
+        <div class="footer_title">
+          <h4>About PoW</h4>
+        </div>
+        <p>PicklesofWar was founded in 2006 and is a full service Web Design, Marketing and Advertising Company. Geared towards helping small to medium size businesses create marketing materials and a plan to succeed. Form Graphics, Print (Display ad, brochures, etc.), Internet research &amp; Marketing and Web Site Design and Development, PicklesofWar can do it all for you.</p>
+      </div>
+      <div class="four columns">
+        
+        <div class="footer_title">
+          
+          <h4>Availability</h4>
+          
+        </div>        
+        
+        <p>Full Time - Looking to hire a full time Manager/Director, Graphic Designer, Marketing Coordinator? Check out my resume and contact me for more information</p>
+
+        <p>Part Time Opportunities are available. <br/> Contact for more information</p>
+        
+      </div>
+      <div class="four columns">
+        <div class="footer_title">        
+          <h4>Biography</h4>          
+        </div>    
+
+        <p><a href="biography.html">Click Here</a> to find out more about me and my marketing history. Feel free to checkout my <a href="http://www.linkedin.com/in/lukeweatherlow" target="_blank">linkedin account</a> as well. </p>    
+        <center><img src="images/bio_weatherlow.jpg" alt="Luke Weatherlow"/></center>   
+      </div>
+      <div class="four columns clearfix">
+        <div class="footer_title">
+          
+          <h4>Address</h4>
+          
+        </div>
+          
+        <p>
+          Located in the north east of the U.S. is ideal for clients in Chicago, NYC, Washington D.C. and Toronto. 
+        </p>
+        <div class="address"> 
+          <strong>Pickles of War</strong>
+          
+          <p>
+            Erie, PA
+            
+          </p>
+        </div>
+        <h6 class="phone">+716 581-3880 </h6>       
+
+        <h6 class="email"><a href="#">luke@picklesofwar.com</a></h6>
+
+      </div>
+  
+    </footer><!-- container -->
+  
+  </div><!--end band-->
+
+  <div class="band bottom">
+  
+    <footer class="bottom container">
+    
+      <div class="eight columns first-credit">
+        <p>Copyright &copy; 2015 | Picklesofwar | All Rights Reserved.</p>
+      </div>
+      
+      <div class="eight columns last-credit">
+          
+      </div>
+      
+  
+    </footer><!-- container -->
+  
+  </div><!--end band-->
+
+  <div id="tooltip"></div>
+  <div id="colourTooltip"></div>
+<!-- JS
+  ================================================== -->
+  <script src="{{ site.baseurl }}/javascript/tabs.js"></script>
+  
+  <script src="{{ site.baseurl }}/javascript/jquery.tweet.js"></script>
+  
+  <script src="{{ site.baseurl }}/javascript/jquery.flickrush.pack.js"></script>
+
+  <!--theme options-->
+  <script type="text/javascript">
+  $(document).ready(
+    function(){
+        //On style selection changed
+        $("select#styles").change(function (){
+          var style = $(this).children().children(":selected").val();
+          //Change stylesheet
+          setActiveStyleSheet(style);
+          //Close panel
+          $("#panel").animate({marginLeft: "-170px"});
+          return false;
+        })
+
+        //Toggle panel 
+        $("#panel a.open").click(function(){
+          var margin_left = $("#panel").css("margin-left");
+          if (margin_left == "-170px"){
+            $("#panel").animate({marginLeft: "0px"});
+          }
+          else{
+            $("#panel").animate({marginLeft: "-170px"});
+          }
+        });
+      });
+  </script>
+  
+  <!--Hook up the tweet display-->
+  <script type='text/javascript'>
+  $(document).ready(function() {
+    $(".tweet").tweet({
+      username: "themetroguy",
+      count: 3,
+      loading_text: "loading tweets..."
+    });
+  });
+  </script>
+  
+  <!--Hook up the flickr feed-->
+  <!--find your flickr id http://idgettr.com/-->
+  <script type="text/javascript">  
+  $(document).ready(function() {
+    $('div.flickr_feed.').flickrush({
+      limit:6,
+      id:'64941093@N06',
+      random:true
+    }); 
+  });
+  </script>
+  
+  <!--slight variant on Chris Coyier's http://css-tricks.com/convert-menu-to-dropdown/ -->
+  
+  <script type="text/javascript">
+  $(document).ready(function() {  
+
+        // Create the dropdown bases
+        $("<select />").appendTo(".navigation nav");
+        
+        // Create default option "Go to..."
+        $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Go to..."
+       }).appendTo("nav select");
+        
+        
+        // Populate dropdowns with the first menu items
+        $(".navigation nav li a").each(function() {
+          var el = $(this);
+          $("<option />", {
+            "value"   : el.attr("href"),
+            "text"    : el.text()
+          }).appendTo("nav select");
+        });
+        
+        //make responsive dropdown menu actually work     
+        $("nav select").change(function() {
+          window.location = $(this).find("option:selected").val();
+        });
+
+      });
+  </script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3264686-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+  <!-- End Document
+  ================================================== -->

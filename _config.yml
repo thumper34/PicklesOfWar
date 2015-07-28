@@ -1,0 +1,13 @@
+# Site settings
+title: Pickles Of War
+email: luke@picklesofwar.com.com
+description: > # this means to ignore newlines until "baseurl:"
+  I create products for people who HATE marketing their businesses online. 
+  I help them make marketing a less scary term and get better results. 
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://picklesofwar.com" # the base hostname & protocol for your site
+twitter_username: lweatherlow
+github_username:  thumper34
+
+# Build settings
+markdown: kramdown
