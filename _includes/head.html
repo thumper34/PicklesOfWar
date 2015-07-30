@@ -6,7 +6,7 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
@@ -17,38 +17,38 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/base.css">
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/skeleton.css">
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/layout.css">		
+	<link rel="stylesheet" href="{{ site.baseurl }}css/base.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}css/skeleton.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}css/layout.css">		
 
 	<!--Default Color - Blue on Light -->
 	
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/themes/light-blue.css" title="lightblue">	
+	<link rel="stylesheet" href="{{ site.baseurl }}css/themes/light-blue.css" title="lightblue">	
 
 	<!--Light Skin Colors-->
-	<link  rel="alternate stylesheet" href="{{ site.baseurl }}/css/themes/dark-red.css" title="darkred">
+	<link  rel="alternate stylesheet" href="{{ site.baseurl }}css/themes/dark-red.css" title="darkred">
 
 	
-	<script src="{{ site.baseurl }}/javascript/modernizr-2.5.3.min.js"></script>
+	<script src="{{ site.baseurl }}javascript/modernizr-2.5.3.min.js"></script>
 
-	<script type="text/javascript"  src="{{ site.baseurl }}/javascript/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript"  src="{{ site.baseurl }}/javascript/plugins.all.js"></script>	
-	<script type="text/javascript" src="{{ site.baseurl }}/javascript/jquery.address-1.4.min.js"></script>	
+	<script type="text/javascript"  src="{{ site.baseurl }}javascript/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript"  src="{{ site.baseurl }}javascript/plugins.all.js"></script>	
+	<script type="text/javascript" src="{{ site.baseurl }}javascript/jquery.address-1.4.min.js"></script>	
 	<!--Flex Slider-->
-	<script src="{{ site.baseurl }}/javascript/jquery.flexslider-min.js"></script>
+	<script src="{{ site.baseurl }}javascript/jquery.flexslider-min.js"></script>
 
 	<!--PrettyPhoto-->
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/prettyPhoto.css" type="text/css" media="screen"/>
-	<script type="text/javascript" src="{{ site.baseurl }}/javascript/jquery.prettyPhoto.js"></script>	
+	<link rel="stylesheet" href="{{ site.baseurl }}css/prettyPhoto.css" type="text/css" media="screen"/>
+	<script type="text/javascript" src="{{ site.baseurl }}javascript/jquery.prettyPhoto.js"></script>	
 
 	<!--Superfish menu-->
 	
-	<link rel="stylesheet" media="screen" href="{{ site.baseurl }}/css/superfish.css" /> 
+	<link rel="stylesheet" media="screen" href="{{ site.baseurl }}css/superfish.css" /> 
 	 
 	
-	<script src="{{ site.baseurl }}/javascript/jquery.hoverIntent.minified.js"></script> 
-	<script src="{{ site.baseurl }}/javascript/superfish.js"></script> 
-	<script src="{{ site.baseurl }}/javascript/supersubs.js"></script> 	
+	<script src="{{ site.baseurl }}javascript/jquery.hoverIntent.minified.js"></script> 
+	<script src="{{ site.baseurl }}javascript/superfish.js"></script> 
+	<script src="{{ site.baseurl }}javascript/supersubs.js"></script> 	
 	
 	<!--Scripts - More in footer-->	
 	
@@ -223,6 +223,6 @@
 		});	
 	</script>	
 	
-	<script type="text/javascript" src="{{ site.baseurl }}/javascript/jquery.all.libraries.js"></script>
-	<script type="text/javascript" src="{{ site.baseurl }}/javascript/sliders.js"></script>	
+	<script type="text/javascript" src="{{ site.baseurl }}javascript/jquery.all.libraries.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}javascript/sliders.js"></script>	
 </head>

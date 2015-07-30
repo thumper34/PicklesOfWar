@@ -4,7 +4,7 @@
       <h1 class="logo"><a href="#top" class="internal">{{ site.title }}</a></h1>      
       <div class="social_menu"> 
         <ul>
-          <li><a href="https://twitter.com/lukeweatherlow" target="_blank" class="twitter" data-tooltip="{{ site.baseurl }}/twitter_tool.png" style=""><img src="{{ site.baseurl }}/images/twitter.png" alt="twitter"></a></li>
+          <li><a href="https://twitter.com/lukeweatherlow" target="_blank" class="twitter" data-tooltip="{{ site.baseurl }}twitter_tool.png" style=""><img src="{{ site.baseurl }}images/twitter.png" alt="twitter"></a></li>
         </ul>
       </div>
     </header> 
@@ -14,11 +14,11 @@
       <div>
         <nav class="primary container">
           <ul id="navLinks" class="sf-menu">    
-            <li><a href="/index.html#top">Home</a></li>
-            <li id="nav-about"><a href="/biography">About</a></li>
-            <li><a href="/index.html#portfolio-section">Portfolio</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/contact">Contact</a></li> 
+            <li><a {% if page.url == "/index.html" %} class="active" {% endif %} href="/index.html#top">Home</a></li>
+            <li id="nav-about"><a {% if page.url == "/biography/index.html" %} class="active" {% endif %} href="/biography">About</a></li>
+            <li><a {% if page.url == "/index.html#portfolio-section" %} class="active" {% endif %} href="/index.html#portfolio-section">Portfolio</a></li>
+            <li><a {% if page.url == "/services/index.html" %} class="active" {% endif %} href="/services">Services</a></li>
+            <li><a {% if page.url == "/contact/index.html" %} class="active" {% endif %} href="/contact">Contact</a></li> 
           </ul>   
         </nav>
       </div>
